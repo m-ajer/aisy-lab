@@ -22,7 +22,7 @@ files, so updating the site never requires touching HTML.
 | Publications | `_data/publications.yml` |
 | Projects (one file each) | `_projects/<slug>.md` |
 | Colors and fonts | tokens at the top of `assets/css/main.css` |
-| Logo / favicon | `assets/img/logo.png`, `assets/img/favicon.svg` |
+| Logo / favicon | `assets/img/logo-small.png` (header, from `logo.png`), `assets/img/favicon.svg` |
 
 ### How the pieces connect
 
