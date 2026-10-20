@@ -1,0 +1,9 @@
+{% comment %} Usage: {% include area-tags.html areas=page.areas %} {% endcomment %}
+{% if include.areas %}
+<ul class="tags">
+  {% for id in include.areas %}
+    {% assign area = site.data.research_areas | where: "id", id | first %}
+    {% if area %}<li class="tag" style="--area: {{ area.color }}">{{ area.short | default: area.name }}</li>{% endif %}
+  {% endfor %}
+</ul>
+{% endif %}

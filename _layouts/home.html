@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="eyebrow">{{ site.affiliation }}</p>
+  <h1>{{ site.tagline }}</h1>
+  <p class="lead">{{ site.description }}</p>
+  <p class="link-row">
+    <a class="btn" href="{{ '/research/' | relative_url }}">Our research</a>
+    <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+  </p>
+</section>
+
+{{ content }}
+
+<section class="section">
+  <h2>Research areas</h2>
+  <div class="grid grid-4">
+    {% for area in site.data.research_areas %}
+    <div class="card area-card">
+      <span class="area-dot" style="--area: {{ area.color }}"></span>
+      <h3>{{ area.name }}</h3>
+      <p>{{ area.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% assign active = site.projects | where: "status", "active" | sort: "order" %}
+{% if active.size > 0 %}
+<section class="section">
+  <div class="section-head">
+    <h2>Current projects</h2>
+    <a href="{{ '/research/' | relative_url }}">All projects →</a>
+  </div>
+  <div class="grid grid-3">
+    {% for project in active limit: 3 %}{% include project-card.html project=project %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign featured = site.data.publications | where: "featured", true %}
+{% if featured.size > 0 %}
+<section class="section">
+  <div class="section-head">
+    <h2>Selected publications</h2>
+    <a href="{{ '/publications/' | relative_url }}">All publications →</a>
+  </div>
+  <ol class="pub-list">
+    {% for pub in featured limit: 4 %}{% include publication.html pub=pub %}{% endfor %}
+  </ol>
+</section>
+{% endif %}

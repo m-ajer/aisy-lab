@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" width="28" height="28">
+      <span>{{ site.title }}</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Main">
+      {% for item in site.nav %}
+        {% assign active = false %}
+        {% if page.url contains item.url %}{% assign active = true %}{% endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

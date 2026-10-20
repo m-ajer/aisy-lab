@@ -1,0 +1,14 @@
+{% assign p = include.project %}
+{% assign first_area = site.data.research_areas | where: "id", p.areas[0] | first %}
+<a class="card project-card" href="{{ p.url | relative_url }}">
+  {% if p.image %}
+    <img class="project-thumb" src="{{ p.image | relative_url }}" alt="" loading="lazy">
+  {% else %}
+    <div class="project-thumb project-thumb-empty" style="--area: {{ first_area.color | default: 'var(--accent)' }}" aria-hidden="true"></div>
+  {% endif %}
+  <div class="card-body">
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.summary }}</p>
+    {% include area-tags.html areas=p.areas %}
+  </div>
+</a>

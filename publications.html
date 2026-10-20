@@ -1,0 +1,25 @@
+---
+title: Publications
+lead: Lab members are highlighted. Filter by research area below.
+permalink: /publications/
+scripts: [/assets/js/publications.js]
+---
+
+<div class="filter-bar" role="group" aria-label="Filter by research area">
+  <button class="chip" data-filter="all" aria-pressed="true">All</button>
+  {% for area in site.data.research_areas %}
+  <button class="chip" data-filter="{{ area.id }}" aria-pressed="false" style="--area: {{ area.color }}">{{ area.short | default: area.name }}</button>
+  {% endfor %}
+</div>
+
+{% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+{% for year in by_year %}
+<section class="pub-year" data-year="{{ year.name }}">
+  <h2>{{ year.name }}</h2>
+  <ol class="pub-list">
+    {% for pub in year.items %}{% include publication.html pub=pub %}{% endfor %}
+  </ol>
+</section>
+{% endfor %}
+
+<p class="muted empty-note" hidden>No publications in this area yet.</p>

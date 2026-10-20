@@ -1,0 +1,58 @@
+# Lab members, grouped. Groups appear on the People page in this order.
+#
+# Member fields (all optional except name):
+#   name, role, photo (path under /assets/img/people/ or full URL), interests,
+#   website, email, scholar (URL), github (username), linkedin (URL),
+#   now (alumni only: where they went)
+#
+# Anyone listed here is automatically highlighted in publication author lists,
+# so write names exactly as they appear in _data/publications.yml.
+#
+# Set `style: list` for a compact text list instead of photo cards (good for alumni).
+
+- group: Principal Investigator
+  members:
+    - name: Ana Example
+      role: Associate Professor, Lab Lead
+      photo: /assets/img/people/placeholder.svg
+      interests: Mechanistic interpretability, safety of language models
+      website: https://example.org
+      email: ana.example@example.org
+      scholar: https://scholar.google.com/
+      github: anaexample
+
+- group: PhD Students
+  members:
+    - name: Marko Placeholder
+      role: PhD Student
+      interests: Sparse autoencoders, feature circuits
+      github: markoplaceholder
+    - name: Iva Sample
+      role: PhD Student
+      interests: Prompt injection, agent security
+      scholar: https://scholar.google.com/
+    - name: Luka Demo
+      role: PhD Student
+      interests: Membership inference, training-data extraction
+    - name: Petra Template
+      role: PhD Student
+      interests: Red-teaming methodology, evaluation design
+
+- group: Research Assistants & Students
+  members:
+    - name: Nina Mock
+      role: MSc Student
+      interests: Probing classifiers
+    - name: Tomislav Stub
+      role: Research Assistant
+      interests: Tooling for activation patching
+
+- group: Alumni
+  style: list
+  members:
+    - name: Dora Former
+      role: PhD 2025
+      now: Research Scientist, Example AI
+    - name: Filip Earlier
+      role: MSc 2024
+      now: ML Engineer, Example Corp

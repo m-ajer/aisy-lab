@@ -1,0 +1,87 @@
+# Publications. Newest first is easiest to maintain, but the page sorts by year anyway.
+#
+# Fields:
+#   title, authors (list, exact names), venue, year      required
+#   areas     list of ids from _data/research_areas.yml (drives the filter buttons)
+#   project   slug of a project in _projects/ (file name without .md) to list it there
+#   featured  true to show on the home page
+#   award     short text, e.g. "Best Paper"
+#   links     any label: url pairs, shown in this order (pdf, arxiv, code, slides, ...)
+#   bibtex    multi-line string, use "|" as below
+#
+# NOTE: the entries below are placeholders — replace them with real papers.
+
+- title: "Example Paper: Tracing Refusal Circuits in Instruction-Tuned Language Models"
+  authors: [Marko Placeholder, Nina Mock, Ana Example]
+  venue: Placeholder Conference on Machine Learning
+  year: 2026
+  areas: [interpretability, robustness]
+  project: circuit-atlas
+  featured: true
+  award: Oral
+  links:
+    pdf: https://arxiv.org/
+    code: https://github.com/
+  bibtex: |
+    @inproceedings{placeholder2026refusal,
+      title     = {Tracing Refusal Circuits in Instruction-Tuned Language Models},
+      author    = {Placeholder, Marko and Mock, Nina and Example, Ana},
+      booktitle = {Placeholder Conference on Machine Learning},
+      year      = {2026}
+    }
+
+- title: "Example Paper: A Benchmark for Indirect Prompt Injection in Tool-Using Agents"
+  authors: [Iva Sample, Petra Template, Jordan External, Ana Example]
+  venue: Placeholder Symposium on Security
+  year: 2026
+  areas: [robustness, evaluation]
+  project: red-team-bench
+  featured: true
+  links:
+    pdf: https://arxiv.org/
+    code: https://github.com/
+    data: https://huggingface.co/
+  bibtex: |
+    @inproceedings{sample2026injection,
+      title     = {A Benchmark for Indirect Prompt Injection in Tool-Using Agents},
+      author    = {Sample, Iva and Template, Petra and External, Jordan and Example, Ana},
+      booktitle = {Placeholder Symposium on Security},
+      year      = {2026}
+    }
+
+- title: "Example Paper: How Much Do Sentence Embeddings Leak About Their Inputs?"
+  authors: [Luka Demo, Dora Former, Ana Example]
+  venue: Placeholder Workshop on Privacy in ML
+  year: 2025
+  areas: [privacy]
+  project: leaky-embeddings
+  featured: true
+  award: Best Paper
+  links:
+    pdf: https://arxiv.org/
+    slides: https://example.org/
+  bibtex: |
+    @inproceedings{demo2025leaky,
+      title     = {How Much Do Sentence Embeddings Leak About Their Inputs?},
+      author    = {Demo, Luka and Former, Dora and Example, Ana},
+      booktitle = {Placeholder Workshop on Privacy in ML},
+      year      = {2025}
+    }
+
+- title: "Example Paper: Sparse Features Are Not Always Monosemantic"
+  authors: [Marko Placeholder, Alex Collaborator, Ana Example]
+  venue: Placeholder Journal of Interpretability
+  year: 2025
+  areas: [interpretability]
+  project: circuit-atlas
+  links:
+    pdf: https://arxiv.org/
+    code: https://github.com/
+
+- title: "Example Paper: Reporting Standards for Red-Teaming Studies"
+  authors: [Petra Template, Filip Earlier, Ana Example]
+  venue: Placeholder Conference on Fairness and Accountability
+  year: 2024
+  areas: [evaluation]
+  links:
+    pdf: https://arxiv.org/

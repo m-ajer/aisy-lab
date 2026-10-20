@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------
+# Site settings — edit these first
+# ---------------------------------------------------------------
+title: AISy Lab
+tagline: AI Security & Interpretability
+description: >-
+  AISy Lab studies how modern AI systems work on the inside, how they can be
+  attacked, and how to make them safer and more transparent.
+
+# For a project site (github.com/your-org/aisy-lab) keep baseurl "/aisy-lab".
+# For a user/org site (your-org.github.io) or a custom domain, set baseurl to "".
+url: "https://your-org.github.io"
+baseurl: "/aisy-lab"
+
+# Lab details (shown in the footer and on the home page)
+affiliation: Faculty of Example Sciences, Example University
+address: Street 1, 10000 City, Country
+email: aisy-lab@example.org
+github: your-org            # GitHub user/org name, or leave empty
+twitter:                    # optional, without @
+
+# Top navigation
+nav:
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: People
+    url: /people/
+
+# ---------------------------------------------------------------
+# Build settings — usually no need to touch
+# ---------------------------------------------------------------
+collections:
+  projects:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+  - scope: { path: "" }
+    values: { layout: page }
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

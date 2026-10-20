@@ -1,0 +1,35 @@
+---
+title: People
+lead: >-
+  We are always looking for motivated students and researchers. If our work
+  interests you, get in touch.
+permalink: /people/
+---
+
+{% for group in site.data.people %}
+<section class="section">
+  <h2>{{ group.group }}</h2>
+  {% if group.style == "list" %}
+  <ul class="alumni">
+    {% for m in group.members %}
+    <li>
+      {% if m.website %}<a href="{{ m.website }}">{{ m.name }}</a>{% else %}<strong>{{ m.name }}</strong>{% endif %}
+      {% if m.role %}<span class="muted"> · {{ m.role }}</span>{% endif %}
+      {% if m.now %}<span class="muted"> → {{ m.now }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="people-grid">
+    {% for m in group.members %}{% include person.html person=m %}{% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endfor %}
+
+<section class="section callout">
+  <h2>Join us</h2>
+  <p>Interested in a PhD, a thesis or an internship with us? Email
+  <a href="mailto:{{ site.email }}">{{ site.email }}</a> with your CV and a few
+  sentences about what you would like to work on.</p>
+</section>
