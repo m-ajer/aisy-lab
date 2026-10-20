@@ -16,7 +16,6 @@ baseurl: ""
 affiliation: Faculty of Electrical Engineering and Computing, University of Zagreb
 address: Unska 3, 10000 Zagreb, Croatia
 email:                      # lab email, or leave empty
-github:                     # GitHub user/org name, or leave empty
 twitter:                    # optional, without @
 
 # Top navigation

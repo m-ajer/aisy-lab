@@ -2,7 +2,10 @@
 layout: default
 ---
 <section class="hero">
-  <p class="eyebrow">{{ site.affiliation }}</p>
+  <div class="hero-logos">
+    <img src="{{ '/assets/img/fer-logo-cropped.svg' | relative_url }}" alt="Faculty of Electrical Engineering and Computing, University of Zagreb" height="64">
+    <img src="{{ '/assets/img/logo-small.png' | relative_url }}" alt="AISy Lab" height="96">
+  </div>
   <h1>{{ site.tagline }}</h1>
   <p class="lead">{{ site.description }}</p>
 </section>
