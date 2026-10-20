@@ -24,23 +24,3 @@ permalink: /research/
     {% endfor %}
   </div>
 </section>
-
-{% assign projects = site.projects | sort: "order" %}
-{% assign active = projects | where: "status", "active" %}
-{% assign past = projects | where: "status", "past" %}
-
-<section class="section">
-  <h2>Current projects</h2>
-  <div class="grid grid-3">
-    {% for project in active %}{% include project-card.html project=project %}{% endfor %}
-  </div>
-</section>
-
-{% if past.size > 0 %}
-<section class="section">
-  <h2>Past projects</h2>
-  <div class="grid grid-3">
-    {% for project in past %}{% include project-card.html project=project %}{% endfor %}
-  </div>
-</section>
-{% endif %}

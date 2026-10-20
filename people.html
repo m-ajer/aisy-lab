@@ -27,9 +27,11 @@ permalink: /people/
 </section>
 {% endfor %}
 
+{% if site.email %}
 <section class="section callout">
   <h2>Join us</h2>
   <p>Interested in a PhD, a thesis or an internship with us? Email
   <a href="mailto:{{ site.email }}">{{ site.email }}</a> with your CV and a few
   sentences about what you would like to work on.</p>
 </section>
+{% endif %}

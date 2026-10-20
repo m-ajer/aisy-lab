@@ -13,16 +13,18 @@ url: "https://m-ajer.github.io"
 baseurl: "/aisy-lab"
 
 # Lab details (shown in the footer and on the home page)
-affiliation: Faculty of Example Sciences, Example University
-address: Street 1, 10000 City, Country
-email: aisy-lab@example.org
-github: your-org            # GitHub user/org name, or leave empty
+affiliation: Faculty of Electrical Engineering and Computing, University of Zagreb
+address: Unska 3, 10000 Zagreb, Croatia
+email:                      # lab email, or leave empty
+github:                     # GitHub user/org name, or leave empty
 twitter:                    # optional, without @
 
 # Top navigation
 nav:
   - title: Research
     url: /research/
+  - title: Projects
+    url: /projects/
   - title: Publications
     url: /publications/
   - title: People
@@ -34,7 +36,7 @@ nav:
 collections:
   projects:
     output: true
-    permalink: /research/:name/
+    permalink: /projects/:name/
 
 defaults:
   - scope: { path: "", type: projects }

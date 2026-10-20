@@ -31,7 +31,7 @@ layout: default
 <section class="section">
   <div class="section-head">
     <h2>Current projects</h2>
-    <a href="{{ '/research/' | relative_url }}">All projects →</a>
+    <a href="{{ '/projects/' | relative_url }}">All projects →</a>
   </div>
   <div class="grid grid-3">
     {% for project in active limit: 3 %}{% include project-card.html project=project %}{% endfor %}

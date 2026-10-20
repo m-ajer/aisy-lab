@@ -34,7 +34,7 @@ files, so updating the site never requires touching HTML.
 
 ### Add a project
 
-Copy any file in `_projects/`, rename it (the file name becomes the URL, e.g. `/research/my-project/`), and edit the front matter.
+Copy any file in `_projects/`, rename it (the file name becomes the URL, e.g. `/projects/my-project/`), and edit the front matter.
 
 ## Preview locally (optional)
 
