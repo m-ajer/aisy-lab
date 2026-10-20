@@ -78,6 +78,8 @@ main.container { padding-top: 48px; padding-bottom: 80px; min-height: 60vh; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: var(--text); }
 .brand:hover { text-decoration: none; }
+/* logo.png is black on transparent; flip it so it stays visible on the dark background */
+@media (prefers-color-scheme: dark) { .brand-logo { filter: invert(1); } }
 .site-nav { display: flex; gap: 28px; }
 .site-nav a { color: var(--text-muted); font-weight: 500; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--text); text-decoration: none; }
