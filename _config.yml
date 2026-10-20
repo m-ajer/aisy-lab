@@ -21,8 +21,6 @@ twitter:                    # optional, without @
 
 # Top navigation
 nav:
-  - title: Research
-    url: /research/
   - title: Projects
     url: /projects/
   - title: Publications

@@ -5,6 +5,13 @@
     <h3>{% if m.website %}<a href="{{ m.website }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</h3>
     {% if m.role %}<p class="person-role">{{ m.role }}</p>{% endif %}
     {% if m.interests %}<p class="person-interests">{{ m.interests }}</p>{% endif %}
+    {% if m.projects %}
+    <ul class="tags person-projects">
+      {% for slug in m.projects %}{% assign proj = site.projects | where: "slug", slug | first %}
+      {% if proj %}<li><a class="tag" href="{{ proj.url | relative_url }}">{{ proj.short | default: proj.title }}</a></li>{% else %}<li class="tag">{{ slug }}</li>{% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
     <p class="person-links">
       {% if m.email %}<a href="mailto:{{ m.email }}">email</a>{% endif %}
       {% if m.scholar %}<a href="{{ m.scholar }}">scholar</a>{% endif %}

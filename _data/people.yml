@@ -4,6 +4,8 @@
 #   name, role, photo (path under /assets/img/people/ or full URL), interests,
 #   website, email, scholar (URL), github (username), linkedin (URL),
 #   now (alumni only: where they went)
+#   projects  list of project slugs from _projects/ (file name without .md),
+#             e.g. [lada], shown as links on their card
 #
 # Anyone listed here is automatically highlighted in publication author lists,
 # so write names exactly as they appear in _data/publications.yml.
@@ -16,39 +18,36 @@
       role: Professor, Lab Lead
       photo: /assets/img/people/picek.jpg
       interests: AI security, LLM safety, backdoor attacks, privacy in machine learning
+      projects: [lada, genesis]
 
-- group: PhD Students
+- group: Researchers
   members:
-    - name: Marko Placeholder
-      role: PhD Student
-      interests: Sparse autoencoders, feature circuits
-      github: markoplaceholder
-    - name: Iva Sample
-      role: PhD Student
-      interests: Prompt injection, agent security
-      scholar: https://scholar.google.com/
-    - name: Luka Demo
-      role: PhD Student
-      interests: Membership inference, training-data extraction
-    - name: Petra Template
-      role: PhD Student
-      interests: Red-teaming methodology, evaluation design
+    - name: Alan Đurđević
+      role: Researcher, PhD Student
+      projects: [genesis]
+  
+    - name: Ivana Jarni
+      role: Researcher
+      projects: [genesis]
+   
+    - name: Antonia Šarčević
+      role: Researcher, PhD Student
+      projects: [genesis]
 
-- group: Research Assistants & Students
-  members:
-    - name: Nina Mock
-      role: MSc Student
-      interests: Probing classifiers
-    - name: Tomislav Stub
-      role: Research Assistant
-      interests: Tooling for activation patching
+    - name: Lukas Baltas
+      role: Researcher
+      projects: [genesis]
 
-- group: Alumni
-  style: list
-  members:
-    - name: Dora Former
-      role: PhD 2025
-      now: Research Scientist, Example AI
-    - name: Filip Earlier
-      role: MSc 2024
-      now: ML Engineer, Example Corp
+    - name: Laura Majer
+      role: Researcher
+      projects: [genesis]
+
+
+
+
+
+
+    
+
+
+

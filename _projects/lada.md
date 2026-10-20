@@ -1,5 +1,6 @@
 ---
 title: "LADA: Localization-Aware Distributed Alignment"
+short: LADA                # optional short name, used for tags on People cards
 summary: >-
   Making LLM guardrails robust, auditable and maintainable by finding where
   safety behavior lives inside the model and making it harder to break.
