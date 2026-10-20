@@ -12,14 +12,10 @@
 
 - group: Principal Investigator
   members:
-    - name: Ana Example
-      role: Associate Professor, Lab Lead
-      photo: /assets/img/people/placeholder.svg
-      interests: Mechanistic interpretability, safety of language models
-      website: https://example.org
-      email: ana.example@example.org
-      scholar: https://scholar.google.com/
-      github: anaexample
+    - name: Stjepan Picek
+      role: Professor, Lab Lead
+      photo: /assets/img/people/picek.jpg
+      interests: AI security, LLM safety, backdoor attacks, privacy in machine learning
 
 - group: PhD Students
   members:
