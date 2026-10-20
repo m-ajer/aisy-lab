@@ -9,8 +9,8 @@ description: >-
 
 # For a project site (github.com/your-org/aisy-lab) keep baseurl "/aisy-lab".
 # For a user/org site (your-org.github.io) or a custom domain, set baseurl to "".
-url: "https://m-ajer.github.io"
-baseurl: "/aisy-lab"
+url: "https://home.aisylab.com"
+baseurl: ""
 
 # Lab details (shown in the footer and on the home page)
 affiliation: Faculty of Electrical Engineering and Computing, University of Zagreb
